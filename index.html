@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>La Truffe Gourmande — La pâtisserie qui s'adresse aux chiens</title>
+<meta name="description" content="Gâteaux d'anniversaire, biscuits et glaces cuisinés à la main. Sans sucre, sans sel. Le seul site de pâtisserie écrit pour les chiens — les humains servent à payer.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<!-- ============ SPRITE SVG ============ -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-paw" viewBox="0 0 24 24">
+      <ellipse cx="12" cy="15.5" rx="5.4" ry="4.6"/>
+      <ellipse cx="5.6" cy="9.6" rx="2.5" ry="3.1" transform="rotate(-18 5.6 9.6)"/>
+      <ellipse cx="18.4" cy="9.6" rx="2.5" ry="3.1" transform="rotate(18 18.4 9.6)"/>
+      <ellipse cx="9.6" cy="5.2" rx="2.3" ry="3"/>
+      <ellipse cx="14.4" cy="5.2" rx="2.3" ry="3"/>
+    </symbol>
+    <symbol id="i-bone" viewBox="0 0 32 16">
+      <path d="M6 2.2a3.6 3.6 0 0 0-2.6 6.1A3.6 3.6 0 1 0 9.5 11h13a3.6 3.6 0 1 0 6.1-2.7A3.6 3.6 0 1 0 22.5 5h-13A3.6 3.6 0 0 0 6 2.2Z"/>
+    </symbol>
+    <symbol id="i-vet" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 21s-7.5-4.6-7.5-10A4.5 4.5 0 0 1 12 8.4 4.5 4.5 0 0 1 19.5 11c0 5.4-7.5 10-7.5 10Z"/>
+      <path d="M12 11.5v4M10 13.5h4"/>
+    </symbol>
+    <symbol id="i-leaf" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M20 4C10 4 4 9 4 16c0 2 .6 3.3.6 3.3S9 10 19 8"/><path d="M4.6 19.3C14 20 20 14 20 4"/>
+    </symbol>
+    <symbol id="i-oven" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="3" y="4" width="18" height="17" rx="3"/><path d="M3 9h18M7 6.5h.01M11 6.5h.01"/><rect x="7" y="12" width="10" height="6" rx="1.5"/>
+    </symbol>
+    <symbol id="i-truck" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M2.5 7h10.5v10H2.5zM13 10h4.2l2.8 3.2V17h-7z"/><circle cx="6.5" cy="18.5" r="1.8"/><circle cx="16.5" cy="18.5" r="1.8"/>
+    </symbol>
+    <symbol id="i-bowl" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M3 10h18l-1.6 7.4a3 3 0 0 1-2.9 2.3H7.5a3 3 0 0 1-2.9-2.3Z"/>
+      <path d="M6.5 10c0-2.5 2.5-4 5.5-4s5.5 1.5 5.5 4"/>
+    </symbol>
+    <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9.5 18 20 6.5"/></symbol>
+    <symbol id="i-cross" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 6l12 12M18 6 6 18"/></symbol>
+    <symbol id="i-lock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/>
+    </symbol>
+  </defs>
+</svg>
+
+<a class="skip" href="#vitrine">Aller à la vitrine</a>
+
+<!-- ============ BANDEAU CONCEPT ============ -->
+<p class="strip">
+  <svg class="ico"><use href="#i-paw"/></svg>
+  Ce site est écrit pour les chiens. Les humains sont admis comme accompagnateurs et moyens de paiement.
+</p>
+
+<!-- ============ HEADER ============ -->
+<header class="header" id="top">
+  <div class="wrap header__in">
+    <a class="brand" href="#top" aria-label="La Truffe Gourmande, accueil">
+      <span class="brand__mark"><svg><use href="#i-paw"/></svg></span>
+      <span class="brand__txt">
+        <strong>La Truffe Gourmande</strong>
+        <small>la pâtisserie qui te parle à toi</small>
+      </span>
+    </a>
+
+    <nav class="nav" id="nav" aria-label="Navigation principale">
+      <a href="#vitrine">La vitrine</a>
+      <a href="#surmesure">Ton gâteau</a>
+      <a href="#recette">Ce qu'il y a dedans</a>
+      <a href="#meute">La meute</a>
+      <a href="pour-ton-humain.html">Pour ton humain</a>
+    </nav>
+
+    <div class="header__actions">
+      <button class="cart" id="cart" aria-label="Ouvrir ma gamelle">
+        <svg><use href="#i-bowl"/></svg>
+        <span class="cart__count" id="cartCount">0</span>
+      </button>
+      <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="hero__blob hero__blob--a"></div>
+  <div class="hero__blob hero__blob--b"></div>
+
+  <div class="wrap hero__in">
+    <div class="hero__copy">
+      <p class="eyebrow"><svg class="ico ico--bone"><use href="#i-bone"/></svg> Fournil artisanal &middot; Le Mans</p>
+      <h1>Enfin une vitrine<br>où <em>tout</em> est pour toi.</h1>
+      <p class="lead">Gâteaux d'anniversaire, biscuits qui croquent, glaces qui fondent. Sans sucre, sans sel, sans rien qui te fasse du mal. Ton humain n'a le droit que de regarder — et de sortir sa carte à la fin.</p>
+      <div class="hero__cta">
+        <a class="btn btn--primary" href="#vitrine">Renifler la vitrine</a>
+        <a class="btn btn--ghost" href="#surmesure">Faire mon gâteau</a>
+      </div>
+      <dl class="hero__stats">
+        <div><dt>12 400</dt><dd>chiens sont passés avant toi</dd></div>
+        <div><dt>100 %</dt><dd>de la carte est pour toi</dd></div>
+        <div><dt>24 h</dt><dd>à attendre devant la porte</dd></div>
+      </dl>
+    </div>
+
+    <div class="hero__art" aria-hidden="true">
+      <div class="plate">
+        <svg class="cake" viewBox="0 0 240 240">
+          <ellipse cx="120" cy="212" rx="96" ry="16" fill="rgba(46,32,24,.05)"/>
+          <rect x="42" y="132" width="156" height="66" rx="14" fill="#B06E3F"/>
+          <rect x="42" y="120" width="156" height="26" rx="13" fill="#F6E3CE"/>
+          <rect x="42" y="96" width="156" height="40" rx="14" fill="#C98551"/>
+          <path d="M42 112c14 0 14 10 28 10s14-10 28-10 14 10 28 10 14-10 28-10 14 10 28 10 14-10 18-10v-16H42Z" fill="#FBEFE0"/>
+          <circle cx="120" cy="64" r="26" fill="#F3C7B4"/>
+          <use href="#i-paw" x="104" y="48" width="32" height="32" fill="#C4622D"/>
+          <rect x="116" y="86" width="8" height="18" rx="4" fill="#7A9E7E"/>
+          <g fill="#7A9E7E"><circle cx="66" cy="158" r="5"/><circle cx="174" cy="170" r="5"/></g>
+          <g fill="#F3C7B4"><circle cx="98" cy="176" r="5"/><circle cx="140" cy="152" r="5"/><circle cx="120" cy="182" r="5"/></g>
+        </svg>
+      </div>
+      <div class="badge-float badge-float--1"><strong>Sans sucre</strong><span>vraiment</span></div>
+      <div class="badge-float badge-float--2"><svg class="ico"><use href="#i-paw"/></svg><span>Goûté avant toi par les 3 chiens du fournil</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BANDEAU CONFIANCE ============ -->
+<section class="trust" aria-label="Nos engagements">
+  <div class="wrap trust__grid">
+    <div class="trust__item"><svg class="ico"><use href="#i-vet"/></svg><p><strong>Ton vétérinaire a relu la carte</strong>Et il a dit oui. Pour une fois.</p></div>
+    <div class="trust__item"><svg class="ico"><use href="#i-leaf"/></svg><p><strong>Rien qui te fasse du mal</strong>Sucré à la banane, jamais au sucre</p></div>
+    <div class="trust__item"><svg class="ico"><use href="#i-oven"/></svg><p><strong>Cuit ce matin</strong>Pendant que tu dormais sur le canapé</p></div>
+    <div class="trust__item"><svg class="ico"><use href="#i-truck"/></svg><p><strong>Chez toi demain</strong>Tu peux commencer à attendre</p></div>
+  </div>
+</section>
+
+<!-- ============ VITRINE ============ -->
+<section class="section" id="vitrine">
+  <div class="wrap">
+    <header class="sec-head">
+      <p class="eyebrow"><svg class="ico ico--bone"><use href="#i-bone"/></svg> La vitrine du jour</p>
+      <h2>Tout est bon, tout est léchable</h2>
+      <p class="sec-head__lead">Six douceurs sorties du four ce matin. Toi tu choisis. Ton humain paie. Chacun son métier.</p>
+    </header>
+
+    <div class="filters" role="tablist" aria-label="Filtrer les pâtisseries">
+      <button class="chip is-on" data-filter="all" role="tab" aria-selected="true">Tout voir</button>
+      <button class="chip" data-filter="gateau" role="tab" aria-selected="false">Gâteaux</button>
+      <button class="chip" data-filter="biscuit" role="tab" aria-selected="false">Biscuits</button>
+      <button class="chip" data-filter="glace" role="tab" aria-selected="false">Glacé</button>
+      <button class="chip" data-filter="coffret" role="tab" aria-selected="false">Coffrets</button>
+    </div>
+
+    <div class="grid" id="grid">
+
+      <article class="card reveal" data-cat="gateau">
+        <div class="card__media" style="--tint:#FBE5D2">
+          <span class="tag tag--hot">Best-seller</span>
+          <svg viewBox="0 0 160 160" aria-hidden="true">
+            <ellipse cx="80" cy="138" rx="52" ry="9" fill="rgba(46,32,24,.045)"/>
+            <rect x="34" y="86" width="92" height="50" rx="12" fill="#B06E3F"/>
+            <rect x="34" y="74" width="92" height="22" rx="11" fill="#F6E3CE"/>
+            <rect x="34" y="56" width="92" height="30" rx="12" fill="#C98551"/>
+            <path d="M34 66c9 0 9 8 18 8s9-8 18-8 9 8 18 8 9-8 18-8 9 8 18 8V56H34Z" fill="#FBEFE0"/>
+            <use href="#i-paw" x="66" y="26" width="28" height="28" fill="#C4622D"/>
+            <g fill="#7A9E7E"><circle cx="52" cy="104" r="4"/><circle cx="112" cy="116" r="4"/></g>
+            <g fill="#F3C7B4"><circle cx="82" cy="118" r="4"/><circle cx="98" cy="98" r="4"/></g>
+          </svg>
+        </div>
+        <div class="card__body">
+          <h3><a class="card__link" href="produit-waouf-cake.html">Le Waouf Cake</a></h3>
+          <p>Carotte râpée, banane mûre, glaçage au yaourt de chèvre. Celui qu'on te sort une fois par an, avec une bougie que tu n'as pas le droit de manger.</p>
+          <ul class="chips-mini"><li>Carotte</li><li>Banane</li><li>Yaourt</li></ul>
+          <div class="card__foot">
+            <span class="price">24,90 €<small>/ 6 parts</small></span>
+            <button class="btn btn--small add" data-name="Waouf Cake" data-price="24,90">Dans ma gamelle</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="card reveal" data-cat="biscuit">
+        <div class="card__media" style="--tint:#EDE6D6">
+          <svg viewBox="0 0 160 160" aria-hidden="true">
+            <ellipse cx="80" cy="134" rx="50" ry="9" fill="rgba(46,32,24,.045)"/>
+            <g transform="rotate(-14 64 63)"><use href="#i-bone" x="26" y="44" width="76" height="38" fill="#D9A566"/></g>
+            <g transform="rotate(9 96 89)"><use href="#i-bone" x="58" y="70" width="76" height="38" fill="#C08A4C"/></g>
+            <g transform="rotate(-4 68 112)"><use href="#i-bone" x="36" y="96" width="64" height="32" fill="#E7C08B"/></g>
+          </svg>
+        </div>
+        <div class="card__body">
+          <h3>Les Os Croustillants</h3>
+          <p>Patate douce, persil frais, farine de riz. Ça croque fort. Et ça arrange ton haleine, ce qui arrange tout le monde à la maison.</p>
+          <ul class="chips-mini"><li>Patate douce</li><li>Persil</li><li>Croquant</li></ul>
+          <div class="card__foot">
+            <span class="price">8,90 €<small>/ sachet 200 g</small></span>
+            <button class="btn btn--small add" data-name="Os Croustillants" data-price="8,90">Dans ma gamelle</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="card reveal" data-cat="gateau">
+        <div class="card__media" style="--tint:#F1D6DA">
+          <svg viewBox="0 0 160 160" aria-hidden="true">
+            <ellipse cx="80" cy="136" rx="44" ry="8" fill="rgba(46,32,24,.045)"/>
+            <path d="M52 88h56l-8 44a6 6 0 0 1-6 5H66a6 6 0 0 1-6-5Z" fill="#C4622D"/>
+            <path d="M60 88h6l-4 49h-2a6 6 0 0 1-5-5Zm18 0h6l-2 49h-6Zm20 0h6l-6 44a6 6 0 0 1-4 5h-2Z" fill="#A95021" opacity=".55"/>
+            <rect x="48" y="82" width="64" height="11" rx="5.5" fill="#A95021"/>
+            <path d="M56 82c0-14 10-22 24-22s24 8 24 22Z" fill="#FBEFE0"/>
+            <circle cx="66" cy="72" r="10" fill="#FBEFE0"/><circle cx="94" cy="72" r="10" fill="#FBEFE0"/>
+            <circle cx="80" cy="60" r="11" fill="#FBEFE0"/>
+            <circle cx="80" cy="41" r="10" fill="#E8A08C"/>
+            <use href="#i-paw" x="71" y="32" width="18" height="18" fill="#8C3F18"/>
+            <g fill="#7A9E7E"><circle cx="62" cy="62" r="3"/><circle cx="98" cy="64" r="3"/><circle cx="80" cy="76" r="3"/></g>
+          </svg>
+        </div>
+        <div class="card__body">
+          <h3>Le Pupcake Cacahuète</h3>
+          <p>Beurre de cacahuète garanti sans xylitol, cœur de compote de pomme, chapeau de yaourt monté. Une bouchée si tu es labrador. Quatre si tu es chihuahua.</p>
+          <ul class="chips-mini"><li>Cacahuète</li><li>Pomme</li><li>Sans xylitol</li></ul>
+          <div class="card__foot">
+            <span class="price">4,50 €<small>/ pièce</small></span>
+            <button class="btn btn--small add" data-name="Pupcake Cacahuète" data-price="4,50">Dans ma gamelle</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="card reveal" data-cat="glace">
+        <div class="card__media" style="--tint:#DCEAE2">
+          <span class="tag tag--new">Édition été</span>
+          <svg viewBox="0 0 160 160" aria-hidden="true">
+            <ellipse cx="80" cy="140" rx="34" ry="7" fill="rgba(46,32,24,.045)"/>
+            <rect x="74" y="104" width="12" height="34" rx="6" fill="#C98551"/>
+            <rect x="48" y="30" width="64" height="82" rx="30" fill="#FBEFE0"/>
+            <path d="M48 66c0-20 14-36 32-36s32 16 32 36c0 6-6 8-12 5s-10-4-16 0-12 6-18 2-18-1-18-7Z" fill="#F3C7B4"/>
+            <g fill="#7A9E7E"><circle cx="66" cy="88" r="4"/><circle cx="96" cy="80" r="4"/><circle cx="80" cy="98" r="4"/></g>
+            <use href="#i-paw" x="68" y="42" width="24" height="24" fill="#C4622D" opacity=".85"/>
+          </svg>
+        </div>
+        <div class="card__body">
+          <h3>La Truffe Givrée</h3>
+          <p>Banane, lait de coco, une pointe de menthe. Pour les après-midis d'août où tu fonds plus vite qu'elle, allongé sur le carrelage de la cuisine.</p>
+          <ul class="chips-mini"><li>Coco</li><li>Banane</li><li>À congeler</li></ul>
+          <div class="card__foot">
+            <span class="price">6,90 €<small>/ lot de 2</small></span>
+            <button class="btn btn--small add" data-name="Truffe Givrée" data-price="6,90">Dans ma gamelle</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="card reveal" data-cat="biscuit">
+        <div class="card__media" style="--tint:#F6E7CF">
+          <svg viewBox="0 0 160 160" aria-hidden="true">
+            <ellipse cx="80" cy="136" rx="46" ry="8" fill="rgba(46,32,24,.045)"/>
+            <circle cx="80" cy="80" r="46" fill="#C98551"/>
+            <path d="M80 34a46 46 0 0 1 46 46c0 6-10 4-12 10s-12 6-18 2-14 10-22 6-10-12-18-12-12-8-10-16a46 46 0 0 1 34-36Z" fill="#FBEFE0"/>
+            <circle cx="80" cy="80" r="16" fill="#FDF6EE"/>
+            <circle cx="80" cy="80" r="16" fill="none" stroke="#C98551" stroke-width="3"/>
+            <g fill="#C4622D"><rect x="58" y="52" width="10" height="4" rx="2" transform="rotate(-20 63 54)"/><rect x="94" y="60" width="10" height="4" rx="2" transform="rotate(30 99 62)"/><rect x="70" y="106" width="10" height="4" rx="2" transform="rotate(12 75 108)"/></g>
+            <g fill="#7A9E7E"><rect x="100" y="92" width="10" height="4" rx="2" transform="rotate(-35 105 94)"/><rect x="50" y="86" width="10" height="4" rx="2" transform="rotate(18 55 88)"/></g>
+          </svg>
+        </div>
+        <div class="card__body">
+          <h3>Le Donut du Toutou</h3>
+          <p>Pomme fondante, cannelle douce, glaçage caroube. Le trou du milieu est prévu pour le doigt de ton humain, qui avait promis « juste une photo ».</p>
+          <ul class="chips-mini"><li>Pomme</li><li>Cannelle</li><li>Caroube</li></ul>
+          <div class="card__foot">
+            <span class="price">5,50 €<small>/ pièce</small></span>
+            <button class="btn btn--small add" data-name="Donut du Toutou" data-price="5,50">Dans ma gamelle</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="card reveal" data-cat="coffret">
+        <div class="card__media" style="--tint:#E7DFF2">
+          <span class="tag tag--gift">Idée cadeau</span>
+          <svg viewBox="0 0 160 160" aria-hidden="true">
+            <ellipse cx="80" cy="136" rx="52" ry="8" fill="rgba(46,32,24,.045)"/>
+            <g transform="rotate(-16 62 52)"><use href="#i-bone" x="42" y="42" width="40" height="20" fill="#D9A566"/></g>
+            <circle cx="102" cy="52" r="12" fill="#F3C7B4"/>
+            <rect x="34" y="66" width="92" height="62" rx="10" fill="#C4622D"/>
+            <rect x="72" y="66" width="16" height="62" fill="#FBEFE0" opacity=".9"/>
+            <rect x="28" y="58" width="104" height="20" rx="8" fill="#A95021"/>
+            <path d="M80 58c-10-14-26-8-22 2 3 7 14 6 22-2Zm0 0c10-14 26-8 22 2-3 7-14 6-22-2Z" fill="#FBEFE0"/>
+            <use href="#i-paw" x="44" y="94" width="20" height="20" fill="#FBEFE0" opacity=".5"/>
+            <use href="#i-paw" x="98" y="100" width="20" height="20" fill="#FBEFE0" opacity=".5"/>
+          </svg>
+        </div>
+        <div class="card__body">
+          <h3>Coffret « Bonne Patte »</h3>
+          <p>Douze pièces, ruban de coton, carte à écrire. Pour ton anniversaire d'adoption — la date que ton humain a notée quelque part et qu'il oublie quand même.</p>
+          <ul class="chips-mini"><li>12 pièces</li><li>Carte offerte</li><li>Ruban coton</li></ul>
+          <div class="card__foot">
+            <span class="price">32,00 €<small>/ coffret</small></span>
+            <button class="btn btn--small add" data-name="Coffret Bonne Patte" data-price="32,00">Dans ma gamelle</button>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ SUR-MESURE ============ -->
+<section class="section section--alt" id="surmesure">
+  <div class="wrap builder">
+    <div class="builder__copy">
+      <p class="eyebrow"><svg class="ico ico--bone"><use href="#i-bone"/></svg> Sur-mesure</p>
+      <h2>Le gâteau de <em>ton</em> anniversaire</h2>
+      <p class="sec-head__lead">Tu ne sais pas quel jour on est. Ton humain, si. Fais-lui choisir la base et écrire ton prénom : c'est cuit le matin, chez toi le lendemain.</p>
+
+      <div class="field">
+        <label for="dogName">Ton prénom (celui des bêtises, pas celui du vétérinaire)</label>
+        <input id="dogName" type="text" maxlength="12" placeholder="Gribouille" value="Gribouille" autocomplete="off">
+      </div>
+
+      <fieldset class="field">
+        <legend>Ta base</legend>
+        <div class="swatches" id="swatches">
+          <button class="swatch is-on" data-base="#C98551" data-top="#FBEFE0" data-label="Carotte &amp; banane"><i style="background:#C98551"></i>Carotte</button>
+          <button class="swatch" data-base="#B4726A" data-top="#F7DFE3" data-label="Betterave &amp; pomme"><i style="background:#B4726A"></i>Betterave</button>
+          <button class="swatch" data-base="#8FA97F" data-top="#E9F0E2" data-label="Épinard &amp; poire"><i style="background:#8FA97F"></i>Épinard</button>
+          <button class="swatch" data-base="#9C7B5A" data-top="#F1E2CE" data-label="Caroube &amp; cacahuète"><i style="background:#9C7B5A"></i>Caroube</button>
+        </div>
+      </fieldset>
+
+      <fieldset class="field">
+        <legend>Ta taille</legend>
+        <div class="sizes" id="sizes">
+          <button class="size is-on" data-price="19,90" data-label="Petit museau">Petit museau<small>jusqu'à 8 kg</small></button>
+          <button class="size" data-price="26,90" data-label="Bon gabarit">Bon gabarit<small>8 à 25 kg</small></button>
+          <button class="size" data-price="34,90" data-label="Grande gueule">Grande gueule<small>25 kg et plus</small></button>
+        </div>
+      </fieldset>
+
+      <div class="builder__foot">
+        <div>
+          <span class="price price--lg" id="buildPrice">19,90 €</span>
+          <small id="buildLabel">Carotte &amp; banane · Petit museau</small>
+        </div>
+        <button class="btn btn--primary add" id="buildAdd" data-name="Ton gâteau sur-mesure" data-price="19,90">Mettre au four</button>
+      </div>
+    </div>
+
+    <div class="builder__preview">
+      <div class="plate plate--sm">
+        <svg class="cake" viewBox="0 0 240 240" aria-hidden="true">
+          <ellipse cx="120" cy="212" rx="92" ry="15" fill="rgba(46,32,24,.05)"/>
+          <rect x="44" y="130" width="152" height="68" rx="14" id="pBase1" fill="#C98551"/>
+          <rect x="44" y="118" width="152" height="26" rx="13" id="pCream" fill="#FBEFE0"/>
+          <rect x="44" y="94" width="152" height="40" rx="14" id="pBase2" fill="#C98551"/>
+          <path id="pDrip" d="M44 110c14 0 14 10 28 10s14-10 28-10 14 10 28 10 14-10 28-10 14 10 28 10 14-10 16-10V94H44Z" fill="#FBEFE0"/>
+          <circle cx="120" cy="62" r="24" fill="#F3C7B4"/>
+          <use href="#i-paw" x="106" y="48" width="28" height="28" fill="#C4622D"/>
+          <rect x="116" y="82" width="8" height="18" rx="4" fill="#7A9E7E"/>
+          <text id="pName" x="120" y="172" text-anchor="middle" font-family="Fraunces, Georgia, serif" font-size="26" fill="#FBEFE0">Gribouille</text>
+        </svg>
+      </div>
+      <p class="builder__note"><svg class="ico"><use href="#i-paw"/></svg> Ton prénom écrit à la poche, au yaourt. Il ne tiendra pas longtemps — on sait.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ INGREDIENTS ============ -->
+<section class="section" id="recette">
+  <div class="wrap">
+    <header class="sec-head sec-head--center">
+      <p class="eyebrow"><svg class="ico ico--bone"><use href="#i-bone"/></svg> La recette, sans filtre</p>
+      <h2>Ce qu'il y a dedans.<br>Et ce qu'il n'y aura jamais.</h2>
+    </header>
+
+    <div class="lists">
+      <div class="list list--yes">
+        <h3><svg class="ico"><use href="#i-check"/></svg> Dans tes fournées</h3>
+        <ul>
+          <li>Farine de riz et de pois chiche</li>
+          <li>Purée de patate douce et de potiron</li>
+          <li>Banane mûre, pomme, poire — le sucre s'arrête là</li>
+          <li>Beurre de cacahuète garanti sans xylitol</li>
+          <li>Yaourt de chèvre et fromage blanc égoutté</li>
+          <li>Caroube, cannelle, persil, menthe</li>
+        </ul>
+      </div>
+      <div class="list list--no">
+        <h3><svg class="ico"><use href="#i-cross"/></svg> Jamais, même pas un peu</h3>
+        <ul>
+          <li>Sucre raffiné et édulcorants</li>
+          <li>Xylitol — toxique pour toi, point final</li>
+          <li>Chocolat, raisin, oignon, avocat</li>
+          <li>Sel ajouté</li>
+          <li>Colorants et arômes de synthèse</li>
+          <li>Conservateurs : ça tient 5 jours, c'est normal</li>
+        </ul>
+      </div>
+    </div>
+
+    <p class="note-vet"><svg class="ico"><use href="#i-vet"/></svg> Chaque recette est relue par un vétérinaire nutritionniste. Une friandise reste une friandise : pas plus de 10 % de ta ration du jour. On sait, c'est injuste. Ce n'est pas nous qui faisons les règles.</p>
+  </div>
+</section>
+
+<!-- ============ AVIS ============ -->
+<section class="section section--dark" id="meute">
+  <div class="wrap">
+    <header class="sec-head sec-head--center">
+      <p class="eyebrow"><svg class="ico"><use href="#i-paw"/></svg> La meute a goûté avant toi</p>
+      <h2>Des avis à quatre pattes</h2>
+      <p class="sec-head__lead">Dictés par des chiens, tapés par leurs humains.</p>
+    </header>
+
+    <div class="quotes">
+      <figure class="quote reveal">
+        <div class="stars" aria-label="5 sur 5">★★★★★</div>
+        <blockquote>J'ai fait trois fois le tour du salon avant même d'avoir eu le droit de goûter. Le carton sentait déjà l'anniversaire.</blockquote>
+        <figcaption><span class="avatar" style="--tint:#C98551"><svg><use href="#i-paw"/></svg></span><div><strong>Gribouille</strong><small>Border collie · 3 ans · Waouf Cake</small></div></figcaption>
+      </figure>
+      <figure class="quote reveal">
+        <div class="stars" aria-label="5 sur 5">★★★★★</div>
+        <blockquote>Mon humain a mordu dans un pupcake pour vérifier. Il a dit « c'est pas mauvais » d'un air très gêné. Je l'ai fixé jusqu'à ce qu'il repose le reste.</blockquote>
+        <figcaption><span class="avatar" style="--tint:#B4726A"><svg><use href="#i-paw"/></svg></span><div><strong>Nougat</strong><small>Beagle · 5 ans · Pupcake Cacahuète</small></div></figcaption>
+      </figure>
+      <figure class="quote reveal">
+        <div class="stars" aria-label="5 sur 5">★★★★★</div>
+        <blockquote>Quatorze ans que j'attendais qu'on m'apporte un gâteau à moi. Il n'est jamais trop tard. Et la glace passe très bien sur mes vieilles dents.</blockquote>
+        <figcaption><span class="avatar" style="--tint:#7A9E7E"><svg><use href="#i-paw"/></svg></span><div><strong>Baccara</strong><small>Labrador · 14 ans · Truffe Givrée</small></div></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ NEWSLETTER ============ -->
+<section class="section newsletter" id="niche">
+  <div class="wrap news__in">
+    <div>
+      <p class="eyebrow"><svg class="ico ico--bone"><use href="#i-bone"/></svg> La niche à bonnes nouvelles</p>
+      <h2>Une recette par mois,<br>et la fournée du samedi.</h2>
+      <p class="sec-head__lead">Tu n'as pas d'adresse e-mail. Va chercher celle de ton humain, il en a plusieurs et il n'en utilise aucune.</p>
+    </div>
+    <form class="news__form" id="newsForm" novalidate>
+      <label class="sr-only" for="email">L'e-mail de ton humain</label>
+      <input id="email" type="email" placeholder="l-email-de-ton-humain@exemple.fr" required>
+      <button class="btn btn--primary" type="submit">Il s'inscrit</button>
+      <p class="news__msg" id="newsMsg" role="status"></p>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="wrap footer__grid">
+    <div class="footer__brand">
+      <a class="brand brand--light" href="#top">
+        <span class="brand__mark"><svg><use href="#i-paw"/></svg></span>
+        <span class="brand__txt"><strong>La Truffe Gourmande</strong><small>la pâtisserie qui te parle à toi</small></span>
+      </a>
+      <p>Fournil au 14 rue des Quatre-Pattes, 72000 Le Mans.</p>
+    </div>
+    <nav aria-label="Boutique"><h4>Pour toi</h4><a href="#vitrine">La vitrine</a><a href="#surmesure">Ton gâteau</a><a href="#vitrine">Coffrets</a><a href="#vitrine">Carte cadeau</a></nav>
+    <nav aria-label="La maison"><h4>La maison</h4><a href="#recette">Ce qu'il y a dedans</a><a href="#meute">Les avis</a><a href="#niche">Nous écrire</a><a href="#top">Le fournil</a></nav>
+    <nav aria-label="Pour les humains"><h4>Pour ton humain</h4><a href="pour-ton-humain.html#livraison">Livraison</a><a href="pour-ton-humain.html#conservation">Conservation</a><a href="pour-ton-humain.html#toxiques">Aliments à risque</a><a href="pour-ton-humain.html#contact">Nous joindre</a></nav>
+  </div>
+  <div class="wrap footer__bar">
+    <p>© 2026 La Truffe Gourmande — fait à la main, léché à la truffe.</p>
+    <p class="footer__paws"><svg class="ico"><use href="#i-paw"/></svg><svg class="ico"><use href="#i-paw"/></svg><svg class="ico"><use href="#i-paw"/></svg></p>
+  </div>
+</footer>
+
+<!-- ============ TUNNEL DE COMMANDE ============ -->
+<div class="sheet" id="sheet" hidden>
+  <div class="sheet__backdrop" data-close></div>
+
+  <div class="sheet__panel" id="sheetPanel" role="dialog" aria-modal="true" aria-labelledby="sheetTitle">
+    <button class="sheet__close" data-close aria-label="Fermer">
+      <svg class="ico"><use href="#i-cross"/></svg>
+    </button>
+
+    <ol class="steps" id="steps" aria-hidden="true">
+      <li data-for="1">Ta gamelle</li>
+      <li data-for="2">La route</li>
+      <li data-for="3">Ton humain</li>
+    </ol>
+
+    <!-- Étape 1 : la gamelle -->
+    <section class="step is-on" data-step="1">
+      <h2 id="sheetTitle">Ta gamelle</h2>
+      <p class="step__lead" id="recapLead">Voilà ce que tu as réussi à faire tomber dedans.</p>
+
+      <ul class="recap" id="recap"></ul>
+
+      <div class="recap__total">
+        <span>Total</span>
+        <strong id="recapTotal">0,00 €</strong>
+      </div>
+      <p class="recap__ship"><svg class="ico"><use href="#i-truck"/></svg> Livraison offerte dès 35 € — sinon 4,90 €, et ce n'est pas toi qui paies.</p>
+
+      <div class="step__foot">
+        <button class="btn btn--primary" data-go="2" id="toStep2">C'est tout ce que je veux</button>
+      </div>
+    </section>
+
+    <!-- Étape 2 : l'adresse -->
+    <section class="step" data-step="2">
+      <h2>Où est-ce qu'on livre ?</h2>
+      <p class="step__lead">Tu sais y rentrer les yeux fermés. L'écrire, c'est une autre histoire. Fais-toi aider.</p>
+
+      <div class="form-grid">
+        <label>Ton nom<input type="text" placeholder="Gribouille" autocomplete="off"></label>
+        <label>Le nom sur la boîte aux lettres<input type="text" placeholder="Celui de ton humain" autocomplete="off"></label>
+        <label class="full">La rue du bout de ta promenade<input type="text" placeholder="12 rue des Marronniers" autocomplete="off"></label>
+        <label>Code postal<input type="text" placeholder="72000" autocomplete="off"></label>
+        <label>Ville<input type="text" placeholder="Le Mans" autocomplete="off"></label>
+      </div>
+
+      <div class="choice">
+        <label><input type="radio" name="sonnette" checked><span><strong>Le livreur peut sonner</strong>Tu aboieras. C'est prévu. C'est même l'idée.</span></label>
+        <label><input type="radio" name="sonnette"><span><strong>Surtout ne pas sonner</strong>Tu dors de 9 h à 17 h et ça ne se négocie pas.</span></label>
+      </div>
+
+      <div class="step__foot">
+        <button class="btn btn--ghost" data-go="1">Revenir à la gamelle</button>
+        <button class="btn btn--primary" data-go="3">Continuer</button>
+      </div>
+    </section>
+
+    <!-- Étape 3 : le passage de relais -->
+    <section class="step step--call" data-step="3">
+      <div class="call__art" aria-hidden="true">
+        <svg viewBox="0 0 200 150">
+          <ellipse cx="100" cy="134" rx="58" ry="8" fill="rgba(46,32,24,.06)"/>
+          <!-- chien assis, de dos, qui lève la tête -->
+          <path d="M78 132c-4-16-6-30-4-44 2-16 12-26 26-26s24 10 26 26c2 14 0 28-4 44Z" fill="#C98551"/>
+          <path d="M92 132c-2-12-3-22-2-32 1-11 5-18 10-18s9 7 10 18c1 10 0 20-2 32Z" fill="#B06E3F" opacity=".45"/>
+          <path d="M126 118c10-6 16-16 14-24-2-7-8-6-9 1-1 6-4 12-9 16Z" fill="#C98551"/>
+          <circle cx="100" cy="52" r="24" fill="#D9975F"/>
+          <path d="M78 44c-6-14-4-24 2-24s10 8 11 17Zm44 0c6-14 4-24-2-24s-10 8-11 17Z" fill="#B06E3F"/>
+          <circle cx="91" cy="50" r="3.2" fill="#2E2018"/><circle cx="109" cy="50" r="3.2" fill="#2E2018"/>
+          <ellipse cx="100" cy="60" rx="5" ry="4" fill="#2E2018"/>
+          <path d="M100 64v4M100 68c-3 4-9 3-9-2M100 68c3 4 9 3 9-2" stroke="#2E2018" stroke-width="2" fill="none" stroke-linecap="round"/>
+          <g class="call__bark">
+            <path d="M136 22h44a8 8 0 0 1 8 8v20a8 8 0 0 1-8 8h-30l-11 9 2-9h-5a8 8 0 0 1-8-8V30a8 8 0 0 1 8-8Z" fill="#C4622D"/>
+            <text x="162" y="47" text-anchor="middle" font-family="Fraunces, Georgia, serif" font-size="19" font-weight="600" fill="#FBEFE0">Wouf</text>
+          </g>
+        </svg>
+      </div>
+
+      <h2>Va chercher ton humain.</h2>
+      <p class="step__lead">Tu as fait le plus dur : tu as choisi. Mais la carte est dans une poche, et les poches, c'est leur département. Ramène-le devant l'écran.</p>
+
+      <ul class="tips">
+        <li><span>1</span>Un aboiement. Un seul, sec, pour l'intriguer.</li>
+        <li><span>2</span>La tête posée sur son genou, sans un bruit.</li>
+        <li><span>3</span>Le fixer sans cligner. Technique avancée, taux de réussite 94 %.</li>
+      </ul>
+
+      <div class="step__foot">
+        <button class="btn btn--ghost" data-go="2">Attends, je change un truc</button>
+        <button class="btn btn--primary" data-go="4">Il est là <svg class="ico"><use href="#i-paw"/></svg></button>
+      </div>
+    </section>
+
+    <!-- Étape 4 : mode humain -->
+    <section class="step" data-step="4">
+      <p class="human-tag">Mode humain — le chien peut se coucher</p>
+      <h2>Paiement sécurisé</h2>
+      <p class="step__lead">Bonjour. Vous finalisez la commande de votre animal. Merci de vérifier le montant avant de valider.</p>
+
+      <div class="pay">
+        <div class="pay__row"><span>Sous-total</span><strong id="paySub">0,00 €</strong></div>
+        <div class="pay__row"><span>Livraison</span><strong id="payShip">4,90 €</strong></div>
+        <div class="pay__row pay__row--total"><span>Total à régler</span><strong id="payTotal">0,00 €</strong></div>
+      </div>
+
+      <div class="form-grid form-grid--pay">
+        <label class="full">Numéro de carte<input type="text" placeholder="•••• •••• •••• ••••" disabled></label>
+        <label>Expiration<input type="text" placeholder="MM / AA" disabled></label>
+        <label>Cryptogramme<input type="text" placeholder="•••" disabled></label>
+      </div>
+      <p class="pay__mock">Maquette de démonstration — les champs sont désactivés, aucun paiement n'est traité.</p>
+
+      <div class="step__foot">
+        <button class="btn btn--ghost" data-go="3">Retour</button>
+        <button class="btn btn--pay" data-go="5"><svg class="ico"><use href="#i-lock"/></svg> Régler <span id="payBtnTotal">0,00 €</span></button>
+      </div>
+    </section>
+
+    <!-- Étape 5 : confirmation -->
+    <section class="step step--done" data-step="5">
+      <div class="done__mark" aria-hidden="true"><svg class="ico"><use href="#i-check"/></svg></div>
+      <h2>C'est bon. Tu peux retourner dormir.</h2>
+      <p class="step__lead">Ton humain a fait ce qu'il fallait. Le colis part demain à 6 h, il sera chez toi dans la journée.</p>
+
+      <ul class="tips tips--plain">
+        <li><span><svg class="ico"><use href="#i-oven"/></svg></span>On cuit ta commande demain matin, avant l'ouverture.</li>
+        <li><span><svg class="ico"><use href="#i-truck"/></svg></span>Tu peux commencer à attendre derrière la porte. Rien ne presse, mais on te comprend.</li>
+        <li><span><svg class="ico"><use href="#i-paw"/></svg></span>On enverra le suivi à ton humain. Toi, tu n'as pas d'adresse. C'est le seul avantage qu'il te reste.</li>
+      </ul>
+
+      <div class="step__foot">
+        <button class="btn btn--primary" data-close>Retourner à la vitrine</button>
+      </div>
+    </section>
+
+  </div>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

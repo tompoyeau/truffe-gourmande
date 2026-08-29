@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pour ton humain — La Truffe Gourmande</title>
+<meta name="description" content="Conservation, quantités, allergènes, livraison, commande. La seule page du site adressée aux humains.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/pages.css">
+</head>
+<body class="human-page">
+
+<!-- Sprite : dupliqué sur chaque page tant que le site n'a pas de gabarit. -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-paw" viewBox="0 0 24 24">
+      <ellipse cx="12" cy="15.5" rx="5.4" ry="4.6"/>
+      <ellipse cx="5.6" cy="9.6" rx="2.5" ry="3.1" transform="rotate(-18 5.6 9.6)"/>
+      <ellipse cx="18.4" cy="9.6" rx="2.5" ry="3.1" transform="rotate(18 18.4 9.6)"/>
+      <ellipse cx="9.6" cy="5.2" rx="2.3" ry="3"/>
+      <ellipse cx="14.4" cy="5.2" rx="2.3" ry="3"/>
+    </symbol>
+    <symbol id="i-alert" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 3.5 22 20H2Z"/><path d="M12 10v4.5M12 17.4h.01"/>
+    </symbol>
+    <symbol id="i-back" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M11 5 4 12l7 7M4 12h16"/>
+    </symbol>
+  </defs>
+</svg>
+
+<!-- ============ BASCULE DE CONTEXTE ============ -->
+<p class="hstrip">
+  <span><strong>Mode humain.</strong> Vous êtes sur la seule page du site qui vous est adressée.</span>
+  <a href="index.html"><svg class="ico"><use href="#i-back"/></svg> Revenir au site du chien</a>
+</p>
+
+<!-- ============ HEADER SOBRE ============ -->
+<header class="hheader">
+  <div class="wrap hheader__in">
+    <a class="hbrand" href="index.html">
+      <span class="hbrand__mark"><svg><use href="#i-paw"/></svg></span>
+      La Truffe Gourmande
+    </a>
+    <nav class="hnav" aria-label="Sections">
+      <a href="#conservation">Conservation</a>
+      <a href="#quantites">Quantités</a>
+      <a href="#composition">Composition</a>
+      <a href="#toxiques">Aliments à risque</a>
+      <a href="#livraison">Livraison</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="hmain wrap">
+
+  <!-- ---------- Sommaire ---------- -->
+  <aside class="htoc" aria-label="Sommaire">
+    <p class="htoc__title">Sur cette page</p>
+    <ol>
+      <li><a href="#conservation">Conservation et fraîcheur</a></li>
+      <li><a href="#quantites">Quelle quantité pour votre chien</a></li>
+      <li><a href="#composition">Composition et allergènes</a></li>
+      <li><a href="#toxiques">Ce qui est toxique pour un chien</a></li>
+      <li><a href="#livraison">Livraison</a></li>
+      <li><a href="#commande">Commande, paiement, annulation</a></li>
+      <li><a href="#contact">Nous joindre</a></li>
+    </ol>
+  </aside>
+
+  <div class="hcontent">
+
+    <header class="hhead">
+      <h1>Les informations sérieuses</h1>
+      <p class="hlead">Votre chien a choisi. Vous avez payé. Voici ce qu'il vous reste à savoir — conservation, quantités, composition, et les aliments qui ne doivent jamais approcher sa gamelle. Cinq minutes de lecture, une fois pour toutes.</p>
+    </header>
+
+    <!-- ---------- 1 ---------- -->
+    <section class="hsec" id="conservation">
+      <h2>1. Conservation et fraîcheur</h2>
+      <p>Nos produits ne contiennent aucun conservateur. Ils se comportent comme une pâtisserie humaine, parce que c'en est une — sans le sucre.</p>
+
+      <table class="htable">
+        <caption>Durées à compter de la réception</caption>
+        <thead>
+          <tr><th scope="col">Produit</th><th scope="col">Au frais (4 °C)</th><th scope="col">Congelé</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Gâteaux et pupcakes (glaçage yaourt)</td><td>5 jours</td><td>2 mois</td></tr>
+          <tr><td>Biscuits et os croustillants</td><td>3 semaines, en boîte hermétique</td><td>Inutile</td></tr>
+          <tr><td>Glaces et truffes givrées</td><td>À garder au congélateur</td><td>3 mois</td></tr>
+          <tr><td>Coffrets assortis</td><td>Suivre le produit le plus fragile</td><td>2 mois</td></tr>
+        </tbody>
+      </table>
+
+      <ul class="hlist">
+        <li>Sortez un gâteau congelé <strong>la veille</strong>, au réfrigérateur — jamais au micro-ondes, le glaçage tranche.</li>
+        <li>Servez à température ambiante : un gâteau glacé sortant du froid est moins digeste, et beaucoup moins odorant, ce qui est un problème pour le principal intéressé.</li>
+        <li>Un glaçage qui perle légèrement à la sortie du froid est normal. Une odeur aigre ne l'est pas : jetez.</li>
+      </ul>
+    </section>
+
+    <!-- ---------- 2 ---------- -->
+    <section class="hsec" id="quantites">
+      <h2>2. Quelle quantité pour votre chien</h2>
+      <p>La règle vétérinaire est simple : <strong>les friandises ne doivent pas dépasser 10 % de l'apport calorique quotidien</strong>. Le reste vient de son alimentation habituelle, qu'une pâtisserie ne remplace jamais.</p>
+
+      <table class="htable">
+        <caption>Repères indicatifs, pour un chien adulte, en bonne santé et normalement actif</caption>
+        <thead>
+          <tr><th scope="col">Poids</th><th scope="col">Par jour, au maximum</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Moins de 5 kg</td><td>1 pupcake <em>ou</em> 2 biscuits</td></tr>
+          <tr><td>5 à 10 kg</td><td>2 pupcakes <em>ou</em> 3 biscuits</td></tr>
+          <tr><td>10 à 25 kg</td><td>1 part de gâteau <em>ou</em> 4 biscuits</td></tr>
+          <tr><td>25 à 40 kg</td><td>1 part et demie <em>ou</em> 6 biscuits</td></tr>
+          <tr><td>Plus de 40 kg</td><td>2 parts <em>ou</em> 8 biscuits</td></tr>
+        </tbody>
+      </table>
+
+      <p class="hnote">Chien en surpoids, diabétique, insuffisant rénal, en cours de traitement, chiot de moins de six mois ou chienne gestante : demandez à votre vétérinaire avant, pas après. Ces repères ne remplacent pas son avis.</p>
+    </section>
+
+    <!-- ---------- 3 ---------- -->
+    <section class="hsec" id="composition">
+      <h2>3. Composition et allergènes</h2>
+      <p>Tout est cuisiné au fournil, en petites quantités, avec des ingrédients de qualité alimentaire humaine. Vous pouvez goûter. Vous serez déçu : il n'y a pas de sucre.</p>
+
+      <div class="hcols">
+        <div>
+          <h3>Base de nos recettes</h3>
+          <ul class="hlist">
+            <li>Farines de riz et de pois chiche (sans gluten)</li>
+            <li>Purées de patate douce, potiron, carotte</li>
+            <li>Banane, pomme, poire — seule source de sucre</li>
+            <li>Beurre de cacahuète sans xylitol, sans sel</li>
+            <li>Yaourt de chèvre, fromage blanc égoutté</li>
+            <li>Caroube, cannelle, persil, menthe</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Allergènes possibles</h3>
+          <ul class="hlist">
+            <li><strong>Arachide</strong> — pupcakes, coffrets</li>
+            <li><strong>Lait et produits laitiers</strong> — tous les glaçages</li>
+            <li><strong>Œuf</strong> — gâteaux uniquement</li>
+            <li><strong>Fruits à coque</strong> — atelier commun, traces possibles</li>
+          </ul>
+          <p class="hnote">Chien allergique connu : la composition détaillée de chaque référence est indiquée sur sa fiche produit, et nous répondons par e-mail sous 24 h ouvrées à toute question précise.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------- 4 ---------- -->
+    <section class="hsec" id="toxiques">
+      <h2>4. Ce qui est toxique pour un chien</h2>
+      <p>Aucun de ces aliments n'entre au fournil. Nous les listons parce que la question revient à chaque commande, et parce qu'un anniversaire de chien finit parfois avec une part du gâteau des humains.</p>
+
+      <div class="halert">
+        <div class="halert__head"><svg class="ico"><use href="#i-alert"/></svg> À ne jamais donner</div>
+        <ul class="hlist hlist--danger">
+          <li><strong>Xylitol</strong> (édulcorant de nombreux produits « sans sucre », dont certains beurres de cacahuète) — chute de glycémie brutale, atteinte du foie. Le plus dangereux de la liste, et le plus discret.</li>
+          <li><strong>Chocolat et cacao</strong> — d'autant plus toxiques que le chocolat est noir.</li>
+          <li><strong>Raisin frais et raisins secs</strong> — atteinte rénale possible, même en très petite quantité.</li>
+          <li><strong>Oignon, ail, poireau, échalote</strong>, crus, cuits ou en poudre.</li>
+          <li><strong>Avocat, macadamia, alcool, caféine</strong>.</li>
+          <li><strong>Pâte à levure crue</strong> — fermente dans l'estomac.</li>
+        </ul>
+        <p class="halert__foot">
+          <strong>En cas d'ingestion : appelez immédiatement votre vétérinaire ou un centre antipoison vétérinaire</strong>,
+          même si votre chien semble aller bien, et même la nuit. Ne le faites pas vomir sans instruction.
+          Notez ce qu'il a avalé, en quelle quantité et à quelle heure.
+        </p>
+        <!-- TODO Tom : insérer ici le numéro du centre antipoison vétérinaire de référence
+             et celui de la clinique partenaire, une fois vérifiés. -->
+      </div>
+    </section>
+
+    <!-- ---------- 5 ---------- -->
+    <section class="hsec" id="livraison">
+      <h2>5. Livraison</h2>
+      <ul class="hlist">
+        <li>Commande validée avant 14 h : <strong>expédiée le lendemain matin</strong>, après la fournée.</li>
+        <li>France métropolitaine, en 24 h, en colis isotherme avec pain de glace.</li>
+        <li><strong>4,90 €</strong> de frais de port, <strong>offerts dès 35 €</strong> de commande.</li>
+        <li>Retrait au fournil possible et gratuit, du mardi au samedi.</li>
+        <li>Personne à la maison ? Choisissez « ne pas sonner » au moment de la commande : le colis tient le froid une demi-journée à l'ombre. Au-delà, prévoyez un point relais.</li>
+      </ul>
+      <p class="hnote">Nous ne livrons pas encore hors France métropolitaine : la chaîne du froid ne suit pas, et nous préférons ne pas expédier plutôt qu'expédier mal.</p>
+    </section>
+
+    <!-- ---------- 6 ---------- -->
+    <section class="hsec" id="commande">
+      <h2>6. Commande, paiement, annulation</h2>
+      <ul class="hlist">
+        <li>Paiement par carte, traité par notre prestataire ; nous ne stockons aucune donnée bancaire.</li>
+        <li>Modification ou annulation possible <strong>tant que la commande n'est pas partie en cuisson</strong> — en pratique, jusqu'à 14 h la veille de l'expédition. Un e-mail suffit.</li>
+        <li>Gâteau personnalisé : le prénom est écrit à la main le matin même, il n'est plus modifiable une fois la cuisson lancée.</li>
+        <li>Colis abîmé, produit non conforme, rupture de la chaîne du froid : envoyez-nous une photo dans les 24 h suivant la réception, nous remplaçons ou remboursons.</li>
+      </ul>
+      <p class="hnote">Denrées périssables : les conditions de rétractation et de remboursement sont détaillées dans les CGV, qui font foi.</p>
+      <!-- TODO Tom : rédiger les CGV avec un juriste — le régime de rétractation des denrées
+           alimentaires périssables est particulier, ne pas l'improviser depuis cette page. -->
+    </section>
+
+    <!-- ---------- 7 ---------- -->
+    <section class="hsec" id="contact">
+      <h2>7. Nous joindre</h2>
+      <div class="hcols">
+        <div>
+          <h3>Le fournil</h3>
+          <p class="hcontact">
+            14 rue des Quatre-Pattes<br>
+            72000 Le Mans<br>
+            Du mardi au samedi, 8 h – 18 h
+          </p>
+        </div>
+        <div>
+          <h3>Par écrit</h3>
+          <p class="hcontact">
+            <a href="mailto:bonjour@latruffegourmande.fr">bonjour@latruffegourmande.fr</a><br>
+            Réponse sous 24 h ouvrées<br>
+            Questions de composition : précisez la référence
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------- Retour ---------- -->
+    <div class="hback">
+      <p>Voilà. C'était la partie sérieuse.</p>
+      <a class="btn btn--primary" href="index.html">Rendre l'écran au chien</a>
+    </div>
+
+  </div>
+</main>
+
+<footer class="hfooter">
+  <div class="wrap hfooter__in">
+    <p>© 2026 La Truffe Gourmande — 14 rue des Quatre-Pattes, 72000 Le Mans.</p>
+    <p><a href="index.html">Accueil</a> · <a href="index.html#recette">Ingrédients</a> · <a href="#contact">Contact</a></p>
+  </div>
+</footer>
+
+</body>
+</html>

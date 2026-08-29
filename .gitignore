@@ -1,0 +1,17 @@
+# Système
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Éditeurs
+.vscode/
+.idea/
+*.swp
+
+# Firebase (si déploiement Hosting)
+.firebase/
+firebase-debug.log
+*-debug.log
+
+# Dépendances (le site n'en a pas, mais au cas où)
+node_modules/
