@@ -21,7 +21,19 @@ La règle tient en trois points :
 
 Une nouvelle section qui ne respecte pas ces trois points est hors sujet, même si elle est jolie.
 
-## Lancer
+## En ligne
+
+**https://tompoyeau.github.io/truffe-gourmande/**
+
+Hébergé par GitHub Pages, branche `main`, racine du dépôt. **Un `git push` suffit à
+redéployer** : Pages reconstruit tout seul en une trentaine de secondes.
+
+GitHub Pages sert `404.html` automatiquement sur les chemins inconnus — rien à configurer.
+Seule limite connue : sur une URL erronée de plus d'un niveau (`/truffe-gourmande/a/b/c`),
+les liens relatifs vers `assets/` de la page 404 ne résolvent pas et la page s'affiche sans
+style. Le cas courant (une faute de frappe sur un seul segment) fonctionne correctement.
+
+## Lancer en local
 
 ```bash
 python -m http.server 5599 --directory D:/dev/truffe-gourmande
